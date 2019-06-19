@@ -35,19 +35,26 @@
 
             </div>
             <div class="col col-6">
-            {{user.login| titlecase}}<br/>
-            Profile URL:{{user.url}}
+              <div class="form-group form-inline">
+          <label class="col-lg-5" for="userid">{{user.login| titlecase}}
+          </label>
+        </div>
+            <div class="form-group form-inline">
+          <label class="col-lg-5" for="userid">Profile URL:{{user.url}}
+          </label>
+        </div>
             </div>
           
             </div>
             <div class="row col-lg-12">
-              <button class="btn btn-primary pull-right col-lg-2 offset-lg-10" type="button" data-toggle="collapse" [attr.data-target]="'#collapseExample'+user.id" aria-expanded="false" [attr.aria-controls]="'collapseExample'+user.id" (click)=getrepo(user.login)>
-    Details
+              <button class="btn btn-primary pull-right col-lg-2 offset-lg-10" type="button" data-toggle="collapse" [attr.data-target]="'#collapseExample'+user.id" data-parent="#sncf-dashboard-accordian" aria-expanded="false" [attr.aria-controls]="'collapseExample'+user.id" (click)=getrepo(user.login)>
+    <span class="hide-me">Details</span>
+    <span class="show-me">Collapse</span>
   </button>
             </div>
           </div>       
     </div>
-  <div class="collapse" [id]="'collapseExample'+user.id" [attr.aria-labelledby]="'collapseExample'+user.id" data-parent="#sncf-dashboard-accordian">
+  <div class="collapse" [id]="'collapseExample'+user.id" [attr.aria-labelledby]="'collapseExample'+user.id">
   <div class="card card-body" >
     <div class="row">
       <div class="col col-5">
