@@ -1,0 +1,77 @@
+<div class="filter">
+	<div class="row">
+		<div class="col col-6">
+			<select (change)="sort()" class="required form-control inputFormHeight listText" [disabled]="fieldcheck"
+            id="dropdown" name="dropdown" [(ngModel)]="dropdown" required>
+             <!-- <option value="1" selected disabled>Select</option>  -->
+            <option *ngFor="let data of sortarr" [value]="data.id">{{data.name}}</option>
+          </select>
+      </div>
+      <div class="col col-4">
+        <form class="icon-search">
+          <input class="form-control" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}" type="text"
+            placeholder="Search by Name.." aria-label="Search">
+        </form>
+      </div>
+      <!-- <div class="col col-2">
+        <button type="button" class="btn sncf-btn" (click)="setSearch(searchText,dropdown)"><em
+            class="fa fa-search"></em></button>
+      </div> -->
+    </div>
+  </div>
+  <div class="count">Total Result:{{count}}</div>
+  <section id="accordion" class="section">
+    <div class="container">
+    <div class="columns is-multiline">
+      <!-- loop over our users and give them each a card -->
+      <div  class="column is-4" *ngFor="let user of users | orderBy:order:ascending|username:searchText | paginate: { itemsPerPage: 5, currentPage: p }">
+        <div class="card" id="sncf-dashboard-accordian">
+          <div class="card-header" [id]="'heading'+user.id">
+        <div class="mb-0 card-header-in collapsed">
+          
+            <div class="row">
+              <div class="col col-6">
+            <img src={{user.avatar_url}} alt="Avatar" style="width:50px">
+
+            </div>
+            <div class="col col-6">
+            {{user.login| titlecase}}<br/>
+            Profile URL:{{user.url}}
+            </div>
+          <button class="btn btn-primary" type="button" data-toggle="collapse" [attr.data-target]="'#collapseExample'+user.id" aria-expanded="false" [attr.aria-controls]="'collapseExample'+user.id" (click)=getrepo(user.login)>
+    Details
+  </button>
+            </div>
+          </div>       
+    </div>
+  <div class="collapse" [id]="'collapseExample'+user.id" [attr.aria-labelledby]="'collapseExample'+user.id" data-parent="#sncf-dashboard-accordian">
+  <div class="card card-body" >
+    <div class="row">
+      <div class="col col-5">
+       <div *ngFor="let r of repo[0]">
+    {{r.name}}</div>
+    </div>
+    <div class="col col-5"> 
+    <div *ngFor="let l of language">
+      {{l|json}}
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+      </div>
+      </div>
+      </div>
+    </section>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    <!-- <nav aria-label="Page navigation example">
+  <ul class="pagination">
+   
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav> -->
+

@@ -1,0 +1,17 @@
+body {
+  font-family: Lato;
+}
+img {
+  border-radius: 50%;
+}
+.filter{
+  background: #1c29d8;
+  padding: .75rem 1.25rem;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 3px;
+}
+.count{
+    margin-left: 77px;
+    margin-bottom: 10px;
+}
