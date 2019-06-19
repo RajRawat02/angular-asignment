@@ -36,6 +36,7 @@ export class AppComponent implements OnInit {
   p: number = 1;
   order = "login";
 ascending = true;
+collapse=true;
   sortarr=[{'id':1,name:'Sort by Name(A - Z)'},
   {'id':2,name:'Sort by Name(Z - A)'}]
   
@@ -45,30 +46,33 @@ ascending = true;
    // $('.collapse').collapse();
     this.userService.getUsers().subscribe((res:any) => {
       this.users = res;
+      this.repo=this.users;
     console.log(typeof(this.users))
     });
-    this.userService.getUsercount().subscribe((res:any)=>{
+    this.userService.getUsers().subscribe((res:any)=>{
       this.usersc=res
       this.count=this.usersc.length
     })
+
   }
- getrepo(user){
-   this.repo=[];
-   this.userService.getUserrepo(user).subscribe((res:any)=>{
-      this.repo.push(res);
-      //console.log(this.repo)
-      this.getlanguage(user,res)
- })
- }
-getlanguage(user,rep){
-  this.language=[];
-    for(let j=0;j<rep.length;j++){
-   this.userService.getlanguages(user,rep[j].name).subscribe((res:any)=>{
-  this.language.push(res);
-  console.log("la"+this.language)
-   })
-   }
-   }
+//  getrepo(user){
+//    this.collapse=false;
+//    this.repo=[];
+//    this.userService.getUserrepo(user).subscribe((res:any)=>{
+//       this.repo.push(res);
+//       //console.log(this.repo)
+//       this.getlanguage(user,res)
+//  })
+//  }
+// getlanguage(user,rep){
+//   this.language=[];
+//     for(let j=0;j<rep.length;j++){
+//    this.userService.getlanguages(user,rep[j].name).subscribe((res:any)=>{
+//   this.language.push(res);
+//   console.log("la"+this.language)
+//    })
+//    }
+//    }
 // setSearch(text,dd){
 //   if(text==undefined && dd!=undefined){
 //     if(dd==1)

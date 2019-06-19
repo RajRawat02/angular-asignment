@@ -24,47 +24,45 @@
     <div class="container">
     <div class="columns is-multiline col-lg-10 offset-lg-1">
       <!-- loop over our users and give them each a card -->
-      <div  class="column is-4" *ngFor="let user of users | orderBy:order:ascending|username:searchText | paginate: { itemsPerPage: 5, currentPage: p }">
+      <div  class="column is-4" *ngFor="let user of users | orderBy:order:ascending|username:searchText | paginate: { itemsPerPage: 4, currentPage: p };let i=index">
         <div class="card" id="sncf-dashboard-accordian">
-          <div class="card-header" [id]="'heading'+user.id">
+          <div class="card-header" [id]="'heading'+i">
         <div class="mb-0 card-header-in collapsed">
           
             <div class="row">
-              <div class="col col-4">
+              <div class="col col-2">
             <img src={{user.avatar_url}} alt="Avatar" style="width:80px; height: 90px">
 
             </div>
-            <div class="col col-6">
+            <div class="col col-8">
               <div class="form-group form-inline">
-          <label class="col-lg-5" for="userid">{{user.login| titlecase}}
+          <label  for="userid">{{user.login| titlecase}}
           </label>
         </div>
             <div class="form-group form-inline">
-          <label class="col-lg-5" for="userid">Profile URL:{{user.url}}
+          <label for="userid">Profile URL : {{user.url}}
           </label>
         </div>
             </div>
           
             </div>
             <div class="row col-lg-12">
-              <button class="btn btn-primary pull-right col-lg-2 offset-lg-10" type="button" data-toggle="collapse" [attr.data-target]="'#collapseExample'+user.id" data-parent="#sncf-dashboard-accordian" aria-expanded="false" [attr.aria-controls]="'collapseExample'+user.id" (click)=getrepo(user.login)>
-    <span class="hide-me">Details</span>
-    <span class="show-me">Collapse</span>
-  </button>
+              <button class="btn btn-primary pull-right col-lg-2 offset-lg-10" type="button" data-toggle="collapse" [attr.data-target]="'#collapseExample'+i" aria-expanded="false" [attr.aria-controls]="'collapseExample'+i">
+             <span class="hide-me">Details</span>
+             <span class="show-me">Collapse</span>
+             </button>
             </div>
           </div>       
     </div>
-  <div class="collapse" [id]="'collapseExample'+user.id" [attr.aria-labelledby]="'collapseExample'+user.id">
+  <div class="collapse" [id]="'collapseExample'+i" [attr.aria-labelledby]="'collapseExample'+i" data-parent="#sncf-dashboard-accordian">
   <div class="card card-body" >
-    <div class="row">
+    <div class="row" *ngFor="let r of user.repos">
       <div class="col col-5">
-       <div *ngFor="let r of repo[0]">
+       <div >
     {{r.name}}</div>
     </div>
-    <div class="col col-5"> 
-    <div *ngFor="let l of language">
-      {{l|json}}
-    </div>
+    <div class="col col-7"> 
+    {{r.languages}}
       </div>
     </div>
   </div>
@@ -74,13 +72,7 @@
       </div>
       </div>
     </section>
-    <pagination-controls (pageChange)="p = $event"></pagination-controls>
-    <!-- <nav aria-label="Page navigation example">
-  <ul class="pagination">
-   
-    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</nav> -->
+    <div class="row">
+    <pagination-controls class="col col-6 offset-lg-6"(pageChange)="p = $event"></pagination-controls>
+    </div>
+    

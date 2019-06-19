@@ -12,8 +12,10 @@ img {
   border-radius: 3px;
 }
 .count{
-    margin-left: 77px;
+    margin-left: 185px;
     margin-bottom: 10px;
 }
 .btn-primary[aria-expanded="true"] .hide-me {display: none;}
-.btn-primary[aria-expanded="false"] .show-me {display: block;}
+.btn-primary[aria-expanded="false"] .hide-me {display: block;}
+.btn-primary[aria-expanded="true"] .show-me {display: block;}
+.btn-primary[aria-expanded="false"] .show-me {display: none;}
