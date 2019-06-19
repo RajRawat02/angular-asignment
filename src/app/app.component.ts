@@ -37,6 +37,7 @@ export class AppComponent implements OnInit {
   order = "login";
 ascending = true;
 collapse=true;
+showLoading: boolean = false;
   sortarr=[{'id':1,name:'Sort by Name(A - Z)'},
   {'id':2,name:'Sort by Name(Z - A)'}]
   
@@ -45,7 +46,9 @@ collapse=true;
   ngOnInit() {
    // $('.collapse').collapse();
     this.userService.getUsers().subscribe((res:any) => {
+      this.showLoading=true;
       this.users = res;
+      this.showLoading=false;
       this.repo=this.users;
     console.log(typeof(this.users))
     });

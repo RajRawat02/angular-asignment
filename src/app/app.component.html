@@ -1,6 +1,6 @@
 <div class="Assign">
 <div class="filter">
-	<div class="row">
+	<div class="row filt">
 		<div class="col col-6">
 			<select (change)="sort()" class="required form-control inputFormHeight listText" [disabled]="fieldcheck"
             id="dropdown" name="dropdown" [(ngModel)]="dropdown" required>
@@ -90,3 +90,6 @@
     <pagination-controls class="col col-5 offset-lg-7"(pageChange)="p = $event"></pagination-controls>
     </div>
     </div>
+    <div *ngIf="showLoading" class="sncf-loader-block">
+    <div class="sncf-loader"><div></div><div></div><div></div><div></div></div>
+</div>
