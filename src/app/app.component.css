@@ -28,3 +28,6 @@ img {
 .card-header{
   background:#f8f9fa;
 }
+.Assign {
+  -webkit-overflow-scrolling: none;
+}
