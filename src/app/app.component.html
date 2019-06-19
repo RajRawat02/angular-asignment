@@ -46,7 +46,20 @@
             </div>
           
             </div>
-            <div class="row col-lg-12">
+            <div class="row">
+              <!-- <div class="col col-6">
+              <div class="col col-6">
+          <label for="userid">Open Issues : 
+          </label>
+          <label class="pl-1">{{user.open_issues}}</label>
+        </div>
+              <div class="col col-6">
+          <label for="userid">Watchers : 
+          </label>
+          <label>{{user.watchers}}</label>
+        </div>
+        </div> -->
+              
               <button class="btn btn-primary pull-right col-lg-2 offset-lg-10" type="button" data-toggle="collapse" [attr.data-target]="'#collapseExample'+i" aria-expanded="false" [attr.aria-controls]="'collapseExample'+i">
              <span class="hide-me">Details</span>
              <span class="show-me">Collapse</span>
@@ -58,7 +71,7 @@
   <div class="card card-body" >
     <div class="row" *ngFor="let r of user.repos">
       <div class="col col-5">
-       <div >
+       <div>
     {{r.name}}</div>
     </div>
     <div class="col col-7"> 
@@ -73,6 +86,6 @@
       </div>
     </section>
     <div class="row">
-    <pagination-controls class="col col-6 offset-lg-6"(pageChange)="p = $event"></pagination-controls>
+    <pagination-controls class="col col-5 offset-lg-7"(pageChange)="p = $event"></pagination-controls>
     </div>
     

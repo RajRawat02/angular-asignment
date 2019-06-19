@@ -17,6 +17,8 @@ export class userDataService {
     "avatar_url": "https://avatars0.githubusercontent.com/u/1?v=4",
     "url": "https://api.github.com/users/mojombo",
     "html_url": "https://github.com/mojombo",
+    "open_issues": 0,
+    "watchers": 5,
     "repos": [
     {
         "id": 26899533,
@@ -73,6 +75,8 @@ export class userDataService {
     "avatar_url": "https://avatars0.githubusercontent.com/u/2?v=4",
     "url": "https://api.github.com/users/defunkt",
     "html_url": "https://github.com/defunkt",
+    "open_issues": 1,
+        "watchers": 4,
     "repos": [
     {
         "id": 1861402,
@@ -113,6 +117,8 @@ export class userDataService {
     "avatar_url": "https://avatars0.githubusercontent.com/u/3?v=4",
     "url": "https://api.github.com/users/pjhyett",
     "html_url": "https://github.com/pjhyett",
+    "open_issues": 10,
+        "watchers": 3,
     "repos":[
     {
         "id": 4061,
@@ -154,6 +160,8 @@ export class userDataService {
     "avatar_url": "https://avatars0.githubusercontent.com/u/4?v=4",
     "url": "https://api.github.com/users/wycats",
     "html_url": "https://github.com/wycats",
+    "open_issues": 4,
+        "watchers": 3,
     "repos":[
     {
         "id": 1119731,
@@ -195,6 +203,8 @@ export class userDataService {
     "avatar_url": "https://avatars0.githubusercontent.com/u/5?v=4",
     "url": "https://api.github.com/users/ezmobius",
     "html_url": "https://github.com/ezmobius", 
+    "open_issues": 7,
+        "watchers": 9,
     "repos":[
     {
         "id": 1119731,
@@ -236,6 +246,8 @@ export class userDataService {
     "avatar_url": "https://avatars0.githubusercontent.com/u/6?v=4",
     "url": "https://api.github.com/users/ivey",
     "html_url": "https://github.com/ivey",
+    "open_issues": 5,
+        "watchers": 9,
     "repos":[
     {
         "id": 1119731,
@@ -275,6 +287,8 @@ export class userDataService {
     "id": 7,
     "node_id": "MDQ6VXNlcjc=",
     "avatar_url": "https://avatars0.githubusercontent.com/u/7?v=4",
+    "open_issues": 2,
+        "watchers": 4,
     "repos":[
     {
         "id": 1119731,
@@ -315,7 +329,8 @@ export class userDataService {
     "login": "vanpelt",
     "id": 8,
     "node_id": "MDQ6VXNlcjE3",
-    "avatar_url": "https://avatars1.githubusercontent.com/u/17?v=4",
+    "avatar_url": "https://avatars1.githubusercontent.com/u/17?v=4","open_issues": 6,
+        "watchers": 7,
     "repos":[
     {
         "id": 1119731,
@@ -357,6 +372,8 @@ export class userDataService {
     "id": 9,
     "node_id": "MDQ6VXNlcjE4",
     "avatar_url": "https://avatars0.githubusercontent.com/u/18?v=4",
+    "open_issues": 7,
+        "watchers": 3,
     "repos":[
     {
         "id": 1119731,
@@ -398,6 +415,8 @@ export class userDataService {
     "id": 10,
     "node_id": "MDQ6VXNlcjE5",
     "avatar_url": "https://avatars0.githubusercontent.com/u/19?v=4",
+    "open_issues": 1,
+        "watchers": 2,
     "repos":[
     {
         "id": 1119731,
