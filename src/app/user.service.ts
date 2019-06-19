@@ -7,7 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 export class userDataService {
   constructor(private http: HttpClient) { }
   //https://api.github.com/repos/${username}/asteroids/languages
-  //apiUrl = 'https://api.github.com';
+   apiUrl = 'https://api.github.com';
 
   getUsers() {
     return this.http.get(`${this.apiUrl}/users`);
