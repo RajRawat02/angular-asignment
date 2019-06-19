@@ -194,8 +194,40 @@ export class userDataService {
     "node_id": "MDQ6VXNlcjU=",
     "avatar_url": "https://avatars0.githubusercontent.com/u/5?v=4",
     "url": "https://api.github.com/users/ezmobius",
-    "html_url": "https://github.com/ezmobius",
-    "repos_url": "https://api.github.com/users/ezmobius/repos"
+    "html_url": "https://github.com/ezmobius", 
+    "repos":[
+    {
+        "id": 1119731,
+        "node_id": "MDEwOlJlcG9zaXRvcnkxMTE5NzMx",
+        "name": "acl_system2",
+        "full_name": "wycats/abbot-from-scratch",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "forks": 4,
+        "open_issues": 1,
+        "watchers": 8,
+        "default_branch": "master",
+		    "languages":"Python"
+    },
+    {
+        "id": 911701,
+        "node_id": "MDEwOlJlcG9zaXRvcnk5MTE3MDE=",
+        "name": "bmhsearch",
+        "full_name": "wycats/abbot-ng",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "open_issues_count": 0,
+        "license": null,
+        "forks": 2,
+        "open_issues": 0,
+        "watchers": 2,
+        "default_branch": "master",
+		    "languages":"R"        
+    }]
   },
   {
     "login": "ivey",
@@ -204,14 +236,78 @@ export class userDataService {
     "avatar_url": "https://avatars0.githubusercontent.com/u/6?v=4",
     "url": "https://api.github.com/users/ivey",
     "html_url": "https://github.com/ivey",
-    "repos_url": "https://api.github.com/users/ivey/repos"
+    "repos":[
+    {
+        "id": 1119731,
+        "node_id": "MDEwOlJlcG9zaXRvcnkxMTE5NzMx",
+        "name": "anaconda",
+        "full_name": "wycats/abbot-from-scratch",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "forks": 4,
+        "open_issues": 1,
+        "watchers": 8,
+        "default_branch": "master",
+		    "languages":"GO"
+    },
+    {
+        "id": 911701,
+        "node_id": "MDEwOlJlcG9zaXRvcnk5MTE3MDE=",
+        "name": "ascii",
+        "full_name": "wycats/abbot-ng",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "open_issues_count": 0,
+        "license": null,
+        "forks": 2,
+        "open_issues": 0,
+        "watchers": 2,
+        "default_branch": "master",
+		    "languages":"PERL"        
+    }]
   },
   {
     "login": "evanphx",
     "id": 7,
     "node_id": "MDQ6VXNlcjc=",
     "avatar_url": "https://avatars0.githubusercontent.com/u/7?v=4",
-    "repos_url": "https://api.github.com/users/evanphx/repos",
+    "repos":[
+    {
+        "id": 1119731,
+        "node_id": "MDEwOlJlcG9zaXRvcnkxMTE5NzMx",
+        "name": "ace",
+        "full_name": "wycats/abbot-from-scratch",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "forks": 4,
+        "open_issues": 1,
+        "watchers": 8,
+        "default_branch": "master",
+		    "languages":"JavaScript"
+    },
+    {
+        "id": 911701,
+        "node_id": "MDEwOlJlcG9zaXRvcnk5MTE3MDE=",
+        "name": "alexa",
+        "full_name": "wycats/abbot-ng",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "open_issues_count": 0,
+        "license": null,
+        "forks": 2,
+        "open_issues": 0,
+        "watchers": 2,
+        "default_branch": "master",
+		    "languages":"GO"        
+    }],
     "url": "https://api.github.com/users/evanphx",
     "html_url": "https://github.com/evanphx"
   },
@@ -220,7 +316,39 @@ export class userDataService {
     "id": 8,
     "node_id": "MDQ6VXNlcjE3",
     "avatar_url": "https://avatars1.githubusercontent.com/u/17?v=4",
-    "repos_url": "https://api.github.com/users/vanpelt/repos",
+    "repos":[
+    {
+        "id": 1119731,
+        "node_id": "MDEwOlJlcG9zaXRvcnkxMTE5NzMx",
+        "name": "amqp",
+        "full_name": "wycats/abbot-from-scratch",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "forks": 4,
+        "open_issues": 1,
+        "watchers": 8,
+        "default_branch": "master",
+		    "languages":"Ruby"
+    },
+    {
+        "id": 911701,
+        "node_id": "MDEwOlJlcG9zaXRvcnk5MTE3MDE=",
+        "name": "analytics-ruby",
+        "full_name": "wycats/abbot-ng",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "open_issues_count": 0,
+        "license": null,
+        "forks": 2,
+        "open_issues": 0,
+        "watchers": 2,
+        "default_branch": "master",
+		    "languages":"RUBY,GO"        
+    }],
     "url": "https://api.github.com/users/vanpelt",
     "html_url": "https://github.com/vanpelt"
   },
@@ -229,7 +357,39 @@ export class userDataService {
     "id": 9,
     "node_id": "MDQ6VXNlcjE4",
     "avatar_url": "https://avatars0.githubusercontent.com/u/18?v=4",
-    "repos_url": "https://api.github.com/users/wayneeseguin/repos",
+    "repos":[
+    {
+        "id": 1119731,
+        "node_id": "MDEwOlJlcG9zaXRvcnkxMTE5NzMx",
+        "name": "afero",
+        "full_name": "wycats/abbot-from-scratch",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "forks": 4,
+        "open_issues": 1,
+        "watchers": 8,
+        "default_branch": "master",
+		    "languages":"Html"
+    },
+    {
+        "id": 911701,
+        "node_id": "MDEwOlJlcG9zaXRvcnk5MTE3MDE=",
+        "name": "alogr",
+        "full_name": "wycats/abbot-ng",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "open_issues_count": 0,
+        "license": null,
+        "forks": 2,
+        "open_issues": 0,
+        "watchers": 2,
+        "default_branch": "master",
+		    "languages":"Ruby"        
+    }],
     "url": "https://api.github.com/users/wayneeseguin",
     "html_url": "https://github.com/wayneeseguin"
   },
@@ -238,7 +398,39 @@ export class userDataService {
     "id": 10,
     "node_id": "MDQ6VXNlcjE5",
     "avatar_url": "https://avatars0.githubusercontent.com/u/19?v=4",
-    "repos_url": "https://api.github.com/users/brynary/repos",
+    "repos":[
+    {
+        "id": 1119731,
+        "node_id": "MDEwOlJlcG9zaXRvcnkxMTE5NzMx",
+        "name": "active_admin",
+        "full_name": "wycats/abbot-from-scratch",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "forks": 4,
+        "open_issues": 1,
+        "watchers": 8,
+        "default_branch": "master",
+		    "languages":"Python"
+    },
+    {
+        "id": 911701,
+        "node_id": "MDEwOlJlcG9zaXRvcnk5MTE3MDE=",
+        "name": "active_merchant",
+        "full_name": "wycats/abbot-ng",
+        "private": false,
+        "owner": {
+            "login": "wycats"
+        },
+        "open_issues_count": 0,
+        "license": null,
+        "forks": 2,
+        "open_issues": 0,
+        "watchers": 2,
+        "default_branch": "master",
+		    "languages":"GO"        
+    }],
     "url": "https://api.github.com/users/brynary",
     "html_url": "https://github.com/brynary"
   }]
