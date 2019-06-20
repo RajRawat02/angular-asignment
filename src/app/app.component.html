@@ -15,7 +15,7 @@
       </div>
     </div>
 </div>
- <div class="count offset-lg-2">Total Result:{{count}}</div>
+ <div class="count offset-lg-1 pl-3">Total Result:{{count}}</div>
 
     <div class="columns is-multiline col-lg-10 offset-lg-1" id="accordian">
       <div  class="column is-4" *ngFor="let user of users | orderBy:order:ascending|username:searchText | paginate: { itemsPerPage: 4, currentPage: p };let i=index">
