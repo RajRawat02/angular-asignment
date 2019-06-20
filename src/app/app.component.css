@@ -1,13 +1,5 @@
-body {
-  font-family: Lato;
-  background: #e4e7ea !important;
-}
-
-img {
-  border-radius: 50%;
-}
 .filter{
-  background: #1c29d8;
+  background: #147abc;
   padding: .75rem 1.25rem;
   margin-bottom: 20px;
   border: 1px solid rgba(0, 0, 0, .125);
@@ -23,10 +15,10 @@ img {
     /* margin-left: 185px;
      */
 }
-.btn-primary[aria-expanded="true"] .hide-me {display: none;}
-.btn-primary[aria-expanded="false"] .hide-me {display: block;}
-.btn-primary[aria-expanded="true"] .show-me {display: block;}
-.btn-primary[aria-expanded="false"] .show-me {display: none;}
+.btn[aria-expanded="true"] .hide-me {display: none;}
+.btn[aria-expanded="false"] .hide-me {display: block;}
+.btn[aria-expanded="true"] .show-me {display: block;}
+.btn[aria-expanded="false"] .show-me {display: none;}
 
 .card-header{
   background:#f8f9fa;
@@ -86,4 +78,15 @@ img {
 }
 .wtcher{
   line-height:69%;
+}
+.card{
+  margin-bottom: 15px;
+}
+
+.card.card-body{
+  margin-bottom: 0;
+}
+.card-header{
+  border: 0;
+    box-shadow: 1px 1px 6px #cccc;
 }

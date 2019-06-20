@@ -31,7 +31,7 @@
           <label class="font-weight-bold" for="userid">{{user.login| titlecase}}</label>
               </div>
         <div class="form-group form-inline">
-          <label for="userid">Profile URL : {{user.url}}
+          <label for="userid">Profile URL : <a href="{{user.url}}" target="_blank">{{user.url}}</a>
           </label>
         </div>
             </div>
@@ -47,7 +47,7 @@
           <label>{{user.watchers}}</label>
         </div>
         </div>
-		<button class="btn btn-primary pull-right col-lg-2 offset-lg-3" type="button" data-toggle="collapse" [attr.data-target]="'#collapseExample'+i" aria-expanded="false" [attr.aria-controls]="'collapseExample'+i">
+		<button class="btn btn-outline-info pull-right col-lg-2 offset-lg-3" type="button" data-toggle="collapse" [attr.data-target]="'#collapseExample'+i" aria-expanded="false" [attr.aria-controls]="'collapseExample'+i">
              <span class="hide-me">Details</span>
              <span class="show-me">Collapse</span>
          </button>
